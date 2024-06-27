@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Product.css";
+import Stardew from '../../assets/img/stardew-valley.avif';
 
 function Product() {
   return (
@@ -8,7 +9,7 @@ function Product() {
         <section>
           <div>
             <div>
-              <ol>
+              <ol className="flex">
                 <li>
                   <a href="#">Store</a>
                   svg
@@ -24,16 +25,17 @@ function Product() {
             </div>
             <div>
               <div>
-                <img src="" alt="Stardew Valley" />
+                <img src={Stardew} alt="Stardew Valley" />
               </div>
-              <div>
-                <img src="" alt="Stardew Valley" />
-                <img src="" alt="Stardew Valley" />
-                <img src="" alt="Stardew Valley" />
-                <img src="" alt="Stardew Valley" />
-                <img src="" alt="Stardew Valley" />
-                <img src="" alt="Stardew Valley" />
-                <img src="" alt="Stardew Valley" />
+              <div className='flex gap-12'>
+                <img src={Stardew} width={150} alt="Stardew Valley 1" />
+                <img src={Stardew} width={150} alt="Stardew Valley 2" />
+                <img src={Stardew} width={150} alt="Stardew Valley 3" />
+                <img src={Stardew} width={150} alt="Stardew Valley 4" />
+                <img src={Stardew} width={150} alt="Stardew Valley 5" />
+                <img src={Stardew} width={150} alt="Stardew Valley 6" />
+                <img src={Stardew} width={150} alt="Stardew Valley 7" />
+                <img src={Stardew} width={150} alt="Stardew Valley 8" />
               </div>
             </div>
           </div>
@@ -43,14 +45,15 @@ function Product() {
             </span>
             <div>
               <h2>Stardew Valley</h2>
-              <div>
+              <div className='space-between'>
                 <div>
                   <h2></h2>
                   <p></p>
                 </div>
-                <div></div>
+                <div>
+                </div>
               </div>
-              <button>
+              <button className='flex gap-12'>
                 <p>s</p>
                 <p>s</p>
                 <p>s</p>
@@ -82,9 +85,9 @@ function Product() {
             <p>Software description provided by the publisher.</p>
             <button>Explore this game&apos;s official website</button>
           </div>
-          <div>
+          {/* <div>
             <img src="" alt="Stardew Valley" />
-          </div>
+          </div> */}
         </section>
       </div>
     </main>

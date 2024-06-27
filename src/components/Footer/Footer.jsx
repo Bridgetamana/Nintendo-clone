@@ -4,13 +4,18 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <div>
+        <div className="flex-center">
           <div>
             <img src="" alt="Nintendo Logo" />
           </div>
-          <div></div>
+          <div className="flex gap-12">
+            <p>F</p>
+            <p>I</p>
+            <p>X</p>
+            <p>Y</p>
+          </div>
         </div>
-        <div>
+        <div className="">
           <div>
             <p>About Nintendo</p>
             <ul>
@@ -123,7 +128,10 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <p></p>
+          <p>
+            © Nintendo. Games are property of their respective owners. Nintendo
+            of America Inc. Headquarters are in Redmond, Washington, USA
+          </p>
           <div>
             <ul>
               <li>

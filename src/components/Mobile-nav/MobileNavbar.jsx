@@ -1,24 +1,31 @@
-import React from 'react'
+import React from 'react';
+import "./MobileNavbar.css";
+import Logo from "../../assets/img/nintendo-logo.jpeg"
+import Flag from "../../assets/img/united-states-flag.png";
 
 const Navbar = () => {
   return (
-    <nav>
-        <div>
+    <nav className="full-width">
+      <div className="">
+        <div className="space-between mobileNav red-bg">
+          <div>
+            <img src={Logo} width={80} alt="Nintendo Logo" />
+          </div>
+          <div className='nav-link'>
+            <a href="#" className='white-text'>My Nintendo Store</a>
             <div>
-                <img src="" alt="Nintendo Logo" />
+              <img src={Flag} width={20} alt="Flag of USA" className='flag' />
             </div>
-            <div>
-                <a href="#">My Nintendo Store</a>
-                <span></span>
-            </div>
+          </div>
         </div>
-        <div>
-            <span>
-                <p>Free shipping</p>on orders $50 or more. <a href="#">Restrictions apply</a>
-            </span>
+        <div className="flex-center nav-banner">
+          <span className="space-between">
+            <p>Earn <a href="#" className='points-link font-bold'>My Nintendo Points</a> on digital games</p>
+          </span>
         </div>
+      </div>
     </nav>
-  )
+  );
 }
 
 export default Navbar

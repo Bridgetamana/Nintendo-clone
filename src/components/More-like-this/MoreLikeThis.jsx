@@ -1,18 +1,21 @@
 import React from 'react'
 
 const MoreLikeThis = () => {
+
+  
+  
   return (
     <section>
       <div>
-        <div>
+        <div className='flex-center'>
           <button>Online</button>
           <p>
             Play online, access classic NES™ and Super NES™ games, and more with
             a Nintendo Switch Online membership.
           </p>
-          <span>
+          <span className='flex'>
             <p>This game supports:</p>
-            <ul>
+            <ul className='flex'>
               <li>
                 <a href="#">Online Play</a>
               </li>
@@ -25,7 +28,7 @@ const MoreLikeThis = () => {
         </div>
         <div>
           <h2>More like this</h2>
-          <div>
+          <div className='flex gap-12'>
             <div>
               <div>
                 <img src="" alt="" />
@@ -37,99 +40,9 @@ const MoreLikeThis = () => {
                 </span>
                 <span>
                   <p>$29.99</p>
-                  <span>
+                  <span className='space-between'>
                     <p>Nintendo Switch</p>
-                    Love
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src="" alt="" />
-              </div>
-              <div>
-                <span>
-                  <h3>My Time at Portia</h3>
-                  <p>4/16/19</p>
-                </span>
-                <span>
-                  <p>$29.99</p>
-                  <span>
-                    <p>Nintendo Switch</p>
-                    Love
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src="" alt="" />
-              </div>
-              <div>
-                <span>
-                  <h3>My Time at Portia</h3>
-                  <p>4/16/19</p>
-                </span>
-                <span>
-                  <p>$29.99</p>
-                  <span>
-                    <p>Nintendo Switch</p>
-                    Love
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src="" alt="" />
-              </div>
-              <div>
-                <span>
-                  <h3>My Time at Portia</h3>
-                  <p>4/16/19</p>
-                </span>
-                <span>
-                  <p>$29.99</p>
-                  <span>
-                    <p>Nintendo Switch</p>
-                    Love
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src="" alt="" />
-              </div>
-              <div>
-                <span>
-                  <h3>My Time at Portia</h3>
-                  <p>4/16/19</p>
-                </span>
-                <span>
-                  <p>$29.99</p>
-                  <span>
-                    <p>Nintendo Switch</p>
-                    Love
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src="" alt="" />
-              </div>
-              <div>
-                <span>
-                  <h3>My Time at Portia</h3>
-                  <p>4/16/19</p>
-                </span>
-                <span>
-                  <p>$29.99</p>
-                  <span>
-                    <p>Nintendo Switch</p>
-                    Love
+                    <p>Love</p>
                   </span>
                 </span>
               </div>

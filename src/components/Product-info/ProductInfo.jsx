@@ -1,110 +1,116 @@
 import React from "react";
+import './ProductInfo.css';
 
 const ProductInfo = () => {
   return (
     <section>
       <div>
-        <div>
-          <div>
+        <div className="rating-wrapper">
+          <div className="rating-card">
             <h4 className="text-center">ESRB rating</h4>
             <div className="space-between gap-12">
               <span>
                 <img src="" alt="Rating" />
               </span>
-              <span>
+              <span className="rating-text">
                 <p>
                   Fantasy Violence, Use of Alcohol, Use of Tobacco, Simulated
                   Gambling, Mild Language, Mild Blood
                 </p>
-                <hr />
                 <p>Users Interact</p>
               </span>
             </div>
           </div>
-          <div>
-            <h3 className="text-center">Supported play mood</h3>
-            <div className="flex gap-12">
-              <div>
-                <img src="" alt="Tv" />
+          <div className="supported-devices">
+            <h4 className="text-center">Supported play mood</h4>
+            <div>
+              <div className="devices">
+                <div className="devices-img">
+                  <img src="" alt="Tv" />
+                </div>
                 <p>TV</p>
               </div>
-              <div>
-                <img src="" alt="Tabletop" />
+              <div className="devices">
+                <div className="devices-img">
+                  <img src="" alt="Tabletop" />
+                </div>
                 <p>Tabletop</p>
               </div>
-              <div>
-                <img src="" alt="Mobile phone" />
+              <div className="devices">
+                <div className="devices-img">
+                  <img src="" alt="Mobile phone" />
+                </div>
                 <p>Handheld</p>
               </div>
             </div>
           </div>
         </div>
-        <div>
-          <div>
+        <div className="product-info-container">
+          <div className="product-info">
             <div>
-              <div className="flex gap-12">
+              <div className="product-data ">
                 <h3>i</h3>
                 <div>
                   <h3>Release date</h3>
                   <p>October 5, 2017</p>
                 </div>
               </div>
-              <div className="flex gap-12">
+              <div className="product-data">
                 <h3>i</h3>
                 <div>
                   <h3>No. of players</h3>
-                  <p>
+                  <div className="product-links">
                     <a href="#">Single System (1)</a>
                     <a href="#">Local wireless (1)</a>
                     <a href="#">Online (1-4)</a>
-                  </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-12">
+              <div className="product-data">
                 <h3>i</h3>
                 <div>
                   <h3>Genre</h3>
-                  <p>
-                    <a href="#">Role-playing</a>
+                  <div className="product-links">
+                    <a href="#">Role-divlaying</a>
                     <a href="#">Simulation</a>
-                  </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-12">
+              <div className="product-data">
                 <h3>i</h3>
                 <div>
                   <h3>Publisher</h3>
-                  <p>
+                  <div className="product-links">
                     <a href="#">ConcernedApe</a>
-                  </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-12">
+              <div className="product-data">
                 <h3>i</h3>
                 <div>
                   <h3>ESRB rating</h3>
-                  <p>
+                  <div className="product-links">
                     <a href="#">Everyone 10+</a>
-                  </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-12">
+              <div className="product-data">
                 <h3>i</h3>
                 <div>
                   <h3>Supported play modes</h3>
-                  <p>
+                  <div>
                     <p>Tv mode, Tabletop mode, Handheld mode</p>
-                  </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-12">
+              <div className="product-data">
                 <h3>i</h3>
                 <div>
                   <h3>Game file size</h3>
                   <p>1.5 GB</p>
                 </div>
               </div>
-              <div className="flex gap-12">
+              <div className="product-data">
                 <h3>i</h3>
                 <div>
                   <h3>Supported languages</h3>

@@ -16,9 +16,12 @@ a {
 ol, ul {
     list-style: none;
 }
-/* img {
-    width: 100%;
-} */
+section {
+    padding: 2rem 1rem;
+}
+section > div {
+    max-width: 71.5rem;
+}
 .red-bg {
     background-color: rgb(230, 0, 18);
 }

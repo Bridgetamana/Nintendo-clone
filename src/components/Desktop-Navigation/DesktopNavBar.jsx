@@ -1,154 +1,154 @@
-import React from 'react'
+import React from "react";
+import "./DesktopNavBar.css";
+import Logo from "../../assets/img/nintendo-logo.jpeg";
+import Flag from "../../assets/img/united-states-flag.png";
+import { RiQuestionnaireFill } from "react-icons/ri";
+import {
+  FaHeart,
+  FaShoppingCart,
+  FaSearch,
+  FaPlus,
+  FaAngleDown,
+} from "react-icons/fa";
+import { FaUser } from "react-icons/fa6";
+
 
 const DesktopNavBar = () => {
   return (
     <nav>
-      <div>
-        <div>
-          <div>
-            <div>
-              <img
-                src=""
-                alt="Nintendo 
-                        logo"
-              />
-            </div>
-            <div>
-              <form action="">
-                <div>
-                  <input type="search" name="" id="" />
-                  <select name="" id="">
-                    <option value="All categories">All categories</option>
-                    <option value="Games">Games</option>
-                    <option value="Hardware">Hardware</option>
-                    <option value="Merchandise">Merchandise</option>
-                    <option value="News & Events"></option>
-                    <option value="Support">Support</option>
-                  </select>
+      <div className="header">
+        <div className="flex gap-16">
+          <div className="nintendologo-desktop">
+            <img src={Logo} alt="Nintendo Logo" />
+          </div>
+          <div className="space-between">
+            <form>
+              <div className="search-bar">
+                <FaSearch size={18} fill="rgb(114, 114, 114)" />
+                <input type="search" name="search" id="" placeholder="Search" />
+              </div>
+              <div className="flex gap-12">
+                <h4>All categories</h4>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  width={18}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+                <div className="all-categories-menu">
+                  <ul>
+                    <li>All categories</li>
+                    <li>Games</li>
+                    <li>Hardware</li>
+                    <li>Merchandise</li>
+                    <li>News & Events</li>
+                    <li>Support</li>
+                  </ul>
                 </div>
-              </form>
-            </div>
-            <div>
-              <ul>
-                <li>
-                  <a href="#">Support</a>
-                </li>
-                <li>
-                  <a href="#">Wish List</a>
-                </li>
-                <li>
-                  <a href="#">Cart</a>
-                </li>
-                <li>
-                  <a href="#">Support</a>
-                </li>
-                <li>
-                  <a href="#">Support</a>
-                </li>
-              </ul>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
-        <div>
-          <div>
-            i<p>My Nintendo Store</p>i
-          </div>
-          <div>
-            <div>
-              <p>My Nintendo Store</p>
-              <button>X</button>
-            </div>
-            <div>
-              <div>
-                <p>Games</p>
-                <ul>
-                  <li>
-                    <a href="#">Nintendo Switch games</a>
-                  </li>
-                  <li>
-                    <a href="#">New releases</a>
-                  </li>
-                  <li>
-                    <a href="#">Sales & deals</a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <p>Hardware</p>
-                <ul>
-                  <li>
-                    <a href="#">Nintendo Switch systems</a>
-                  </li>
-                  <li>
-                    <a href="#">Joy-Con & controllers</a>
-                  </li>
-                  <li>
-                    <a href="#">Cases & more</a>
-                  </li>
-                  <li>
-                    <a href="#">Amiibo</a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <p>Merchandise</p>
-                <ul>
-                  <li>
-                    <a href="#">Apparel & accessories</a>
-                  </li>
-                  <li>
-                    <a href="#">Home & office</a>
-                  </li>
-                  <li>
-                    <a href="#">Plush</a>
-                  </li>
-                  <li>
-                    <a href="#">Toys</a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <p>Store Exclusives</p>
-                <ul>
-                  <li>
-                    <a href="#">Exclusive products</a>
-                  </li>
-                  <li>
-                    <a href="#">My Nintendo rewards</a>
-                  </li>
-                  <li>
-                    <a href="#">Nintendo Switch Online offers</a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <p>Characters</p>
-                <ul>
-                  <li>
-                    <a href="#">Pikmin</a>
-                  </li>
-                  <li>
-                    <a href="#">Splatoon</a>
-                  </li>
-                  <li>
-                    <a href="#">Super Mario</a>
-                  </li>
-                  <li>
-                    <a href="#">The Legend of Zelda</a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <p>Sales & Deals</p>
-                <ul></ul>
-              </div>
-            </div>
-            <button>Shop all</button>
-          </div>
+        <div className="flex gap-16">
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="quick-links"
+          >
+            <RiQuestionnaireFill size={20} />
+            <h4>Support</h4>
+          </a>
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="quick-links"
+          >
+            <FaHeart size={18} />
+            <h4>Wish List</h4>
+          </a>
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="quick-links"
+          >
+            <FaShoppingCart size={20} />
+            <h4>Cart</h4>
+          </a>
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="quick-links"
+          >
+            <FaUser size={18} />
+            <h4>Log in/ Sign up</h4>
+          </a>
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="quick-links"
+          >
+            <img src={Flag} alt="Flag of USA" />
+          </a>
+        </div>
+      </div>
+      <div className="header-dropdown">
+        <div className="flex">
+          <button className="dropdown">
+            <FaPlus size={18} />
+            <h4>My Nintendo Store</h4>
+            <FaAngleDown size={18} />
+          </button>
+          <button className="dropdown">
+            <FaPlus size={18} />
+            <h4>Games</h4>
+            <FaAngleDown size={18} />
+          </button>
+          <button className="dropdown">
+            <FaPlus size={18} />
+            <h4>Nintendo Switch</h4>
+            <FaAngleDown size={18} />
+          </button>
+          <button className="dropdown">
+            <FaPlus size={18} />
+            <h4>News & Events</h4>
+            <FaAngleDown size={18} />
+          </button>
+          <button className="dropdown">
+            <FaPlus size={18} />
+            <h4>Play Nintendo</h4>
+            <FaAngleDown size={18} />
+          </button>
+        </div>
+      </div>
+      <div className="flex-center banner-container">
+        <div className="banner">
+          <span className="shipping">
+            <b>Free shipping</b>
+            on orders $50 or more.
+            <a href="#" target="blank" className="underline">
+              Restrictions apply
+            </a>
+          </span>
+          <span className="earn-points">
+            <p>Earn <a href="#" className='points-link font-bold'>My Nintendo Points</a> on digital games</p>
+          </span>
         </div>
       </div>
     </nav>
   );
-}
+};
 
-export default DesktopNavBar
+export default DesktopNavBar;

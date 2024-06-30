@@ -1,25 +1,44 @@
 import React from "react";
+import "./MobileNavToolBar.css";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaHeart, FaShoppingCart, FaSearch } from "react-icons/fa";
+import { FaUser } from "react-icons/fa6";
+import { GoDownload } from "react-icons/go";
+
+
 
 const MobileNavToolBar = () => {
   return (
-    <div>
-      <div>
-        <div>
-          <span>
-            <p>Digital</p>
-          </span>
-          <button className="flex gap-12">
-            <p>s</p>
-            <p>s</p>
-            <p>s</p>
-          </button>
+    <div className="toolbar-container">
+      <div className="toolbar">
+        <div className="download-toolbar">
+          <div>
+            <span>
+              <p>Digital</p>
+              <h4>$14.99</h4>
+            </span>
+            <button className="flex gap-12 download-btn">
+              <GoDownload fill="rgb(255, 255, 255)" size={20}/>
+              Direct download
+            </button>
+          </div>
         </div>
-        <div className="flex gap-12">
-          <p>M</p>
-          <p>L</p>
-          <p>S</p>
-          <p>C</p>
-          <p>D</p>
+        <div className="toolbar-nav">
+          <button className="toolbar-nav-btn">
+            <GiHamburgerMenu size={30} />
+          </button>
+          <button className="toolbar-nav-btn">
+            <FaHeart size={30} />
+          </button>
+          <button className="toolbar-nav-btn search">
+            <FaSearch size={28} fill="white" />
+          </button>
+          <button className="toolbar-nav-btn">
+            <FaShoppingCart size={30} />
+          </button>
+          <button className="toolbar-nav-btn">
+            <FaUser size={30} />
+          </button>
         </div>
       </div>
     </div>

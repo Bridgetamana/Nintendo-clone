@@ -59,3 +59,18 @@ section > div {
 .gap-12 {
     gap: 12px;
 }
+.gap-16 {
+    gap: 1rem;
+}
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .desktop-nav {
+    display: block;
+}
+.mobile-nav {
+    display: none;
+}
+}

@@ -1,0 +1,94 @@
+.access-card {
+  background: rgb(248, 248, 248);
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+  align-items: center;
+  font-weight: 700;
+}
+.online-btn {
+  display: flex;
+  justify-content: center;
+  padding: 0.25rem 0;
+  background-color: rgb(230, 0, 18);
+  border: none;
+  margin-bottom: 1rem;
+  width: 50%;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+h3 {
+  padding: 1rem 0;
+}
+li {
+  margin: 0 0.5rem;
+}
+li a {
+  font-size: 0.875rem;
+  border-bottom: 2px solid rgb(230, 0, 18);
+  display: inline-block;
+  color: rgb(230, 0, 18);
+}
+.learn-more-btn {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  background-color: rgb(230, 0, 18);
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: 1rem;
+  width: 40%;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.more-game-card {
+  width: calc(66.6667% - 0.666667rem);
+  margin: 1.5rem 1rem;
+  flex-shrink: 0;
+  /* min-width: 208px; */
+max-width: 16.375rem;
+border: 1px solid rgb(218, 218, 218);
+border-radius: 0.5rem;
+}
+.more-game-img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.more-game-text {
+    padding: 1rem;
+    flex-grow: 1;
+}
+h4 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+.price {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.wishlist-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.red-border {
+  display: block;
+  width: 2px;
+  height: 0.875rem;
+  background-color: rgb(230, 0, 18);
+  margin-right: 0.25rem;
+}
+.warning {
+    margin-top: 4rem;
+}
+.small-text {
+    font-size: 0.625rem;
+}

@@ -40,10 +40,10 @@ form {
     align-items: center;
     gap: 6px;
 }
-a:last-child {
+/* a:last-child {
     width: 24px;
     margin-right: 1rem;
-}
+} */
 .header-dropdown {
     display: flex;
     justify-content: center;

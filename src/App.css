@@ -6,6 +6,10 @@
     line-height: 1.4;
     color: rgb(72, 72, 72);
 }
+:root {
+  --main-color: rgb(230, 0, 18);
+  --gray-text: rgb(114, 114, 114);
+}
 img {
     width: 100%;
 }
@@ -22,11 +26,25 @@ section {
 section > div {
     max-width: 71.5rem;
 }
+.gray-text {
+    color: var(--gray-text);
+}
 .red-bg {
     background-color: rgb(230, 0, 18);
 }
+.red-border {
+  display: block;
+  width: 2px;
+  height: 0.875rem;
+  background-color: rgb(230, 0, 18);
+  margin-right: 0.25rem;
+}
 .white-text {
     color: white;
+}
+.small-text {
+    font-weight: 300;
+    font-size: 0.625rem;
 }
 .font-bold {
     font-weight: 700;
@@ -49,10 +67,6 @@ section > div {
     display: flex;
     align-items: center;
 }
-.wrap {
-    display: flex;
-    flex-wrap: wrap;
-}
 .text-center {
     text-align: center;
 }
@@ -62,7 +76,7 @@ section > div {
 .gap-16 {
     gap: 1rem;
 }
-.hidden {
+.desktop-nav {
     display: none;
 }
 

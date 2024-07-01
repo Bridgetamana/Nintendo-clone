@@ -23,7 +23,7 @@
 h3 {
   padding: 1rem 0;
 }
-li {
+/* li {
   margin: 0 0.5rem;
 }
 li a {
@@ -31,7 +31,7 @@ li a {
   border-bottom: 2px solid rgb(230, 0, 18);
   display: inline-block;
   color: rgb(230, 0, 18);
-}
+} */
 .learn-more-btn {
   display: flex;
   justify-content: center;

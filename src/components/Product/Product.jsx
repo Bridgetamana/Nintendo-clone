@@ -1,31 +1,42 @@
-import React from 'react'
+import React from "react";
 import "./Product.css";
-import Stardew from '../../assets/img/stardew-valley.avif';
-import {
-  MdChevronRight,
-} from "react-icons/md";
+import Stardew from "../../assets/img/stardew-valley.avif";
+import Certificate from "../../assets/img/esrb-certificate.png";
+import { MdChevronRight } from "react-icons/md";
 
 function Product() {
   return (
-    <main>
+    <section>
       <div>
-        <section>
+        <div className="stardew-product-card">
+          <div className="breadcrumb">
+            <ul className="flex">
+              <li className="flex breadcrumb-list">
+                <a
+                  href="https://www.nintendo.com/us/store/"
+                  className="gray-text"
+                >
+                  Store
+                </a>
+                <MdChevronRight fill="#dadada" />
+              </li>
+              <li className="flex breadcrumb-list">
+                <a
+                  href="https://www.nintendo.com/us/store/games/"
+                  className="gray-text"
+                >
+                  Games
+                </a>
+                <MdChevronRight fill="#dadada" />
+              </li>
+              <li className="flex">
+                <a href="#" className="gray-text">
+                  Stardew Valley
+                </a>
+              </li>
+            </ul>
+          </div>
           <div>
-            <div className="breadcrumb">
-              <ol className="flex">
-                <li className="flex">
-                  <a href="https://www.nintendo.com/us/store/">Store</a>
-                  <MdChevronRight />
-                </li>
-                <li className="flex">
-                  <a href="https://www.nintendo.com/us/store/games/">Games</a>
-                  <MdChevronRight />
-                </li>
-                <li className="flex">
-                  <a href="#">Stardew Valley</a>
-                </li>
-              </ol>
-            </div>
             <div className="product-image">
               <div className="stardew-img">
                 <img src={Stardew} alt="Stardew Valley" />
@@ -39,6 +50,18 @@ function Product() {
                 <img src={Stardew} width={150} alt="Stardew Valley 6" />
                 <img src={Stardew} width={150} alt="Stardew Valley 7" />
                 <img src={Stardew} width={150} alt="Stardew Valley 8" />
+              </div>
+            </div>
+            <div className="flex rating">
+              <div className="rating-img">
+                <img src={Certificate} alt="" />
+              </div>
+              <div>
+                <p className="warning-text">
+                  Fantasy Violence, Use of Alcohol, Use of Tobacco, Simulated
+                  Gambling, Mild Language, Mild Blood
+                </p>
+                <p>Users Interact</p>
               </div>
             </div>
           </div>
@@ -112,11 +135,12 @@ function Product() {
               </p>
             </div>
           </div>
-        </section>
-        <section className="game-description">
+        </div>
+        <div className="game-description">
           <div>
             <div>
-              <h2>You&apos;re moving to the valley</h2>
+              <h3>You&apos;re moving to the valley...</h3>
+              <br />
               <span className="full-description">
                 <p>
                   You’ve inherited your grandfather’s old farm plot in Stardew
@@ -159,7 +183,7 @@ function Product() {
                   Software description provided by the publisher.
                 </p>
               </span>
-              <button className='explore-btn'>
+              <button className="explore-btn">
                 <a
                   href="http://www.stardewvalley.net/"
                   target="_blank"
@@ -169,14 +193,14 @@ function Product() {
                 </a>
               </button>
             </div>
-            <div className='stardew-img'>
+            <div className="stardew-image">
               <img src={Stardew} alt="Stardew Valley" />
             </div>
           </div>
-        </section>
+        </div>
       </div>
-    </main>
+    </section>
   );
 }
 
-export default Product
+export default Product;

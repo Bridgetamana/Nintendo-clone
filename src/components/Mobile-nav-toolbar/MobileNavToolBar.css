@@ -81,3 +81,15 @@ display: flex;
     color: rgb(255, 255, 255);
     background-color: rgb(230, 0, 18);
 }
+@media (min-width: 768px) {
+    .toolbar-container {
+        width: 60%;
+        background: none;
+    }
+    
+}
+@media (min-width: 1024px) {
+.toolbar-container {
+        display: none;
+    }
+}

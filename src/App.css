@@ -42,6 +42,9 @@ section > div {
 .white-text {
     color: white;
 }
+.text-red {
+    color: rgb(230, 0, 18);
+}
 .small-text {
     font-weight: 300;
     font-size: 0.625rem;

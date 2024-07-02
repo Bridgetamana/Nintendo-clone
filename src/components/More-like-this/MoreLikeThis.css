@@ -1,8 +1,7 @@
 .access-card {
+  display: flex;
   background: rgb(248, 248, 248);
   border-radius: 0.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
   padding: 2rem;
   align-items: center;
   font-weight: 700;
@@ -64,6 +63,9 @@ border-radius: 0.5rem;
     padding: 1rem;
     flex-grow: 1;
 }
+.access-img {
+  display: none;
+}
 h4 {
     font-size: 1rem;
     margin-bottom: 0.25rem;
@@ -91,4 +93,14 @@ h4 {
 }
 .small-text {
     font-size: 0.625rem;
+}
+
+@media (min-width: 768px) {
+  .access-img {
+  display: block;
+  width: 450px;
+}
+.access-details {
+  width: 50%;
+}
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect} from "react";
 import "./DesktopNavBar.css";
 import Logo from "../../assets/img/nintendo-logo.jpeg";
 import Flag from "../../assets/img/united-states-flag.png";
@@ -9,11 +9,19 @@ import {
   FaSearch,
   FaPlus,
   FaAngleDown,
+  FaStar,
 } from "react-icons/fa";
 import { FaUser } from "react-icons/fa6";
-
-
+        
 const DesktopNavBar = () => {
+
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
   return (
     <nav>
       <div className="header">
@@ -98,7 +106,7 @@ const DesktopNavBar = () => {
             href="http://"
             target="_blank"
             rel="noopener noreferrer"
-            className="quick-links"
+            className="quick-links flag"
           >
             <img src={Flag} alt="Flag of USA" />
           </a>
@@ -106,33 +114,119 @@ const DesktopNavBar = () => {
       </div>
       <div className="header-dropdown">
         <div className="flex">
-          <button className="dropdown">
-            <FaPlus size={18} />
-            <h4>My Nintendo Store</h4>
-            <FaAngleDown size={18} />
+          <button className="dropdown" onClick={toggleDropdown}>
+            <FaPlus size={16} fill="rgb(230, 0, 18)" />
+            <h4 className="text-red">My Nintendo Store</h4>
+            <FaAngleDown size={18} fill="rgb(230, 0, 18)" />
           </button>
           <button className="dropdown">
-            <FaPlus size={18} />
-            <h4>Games</h4>
-            <FaAngleDown size={18} />
+            <FaPlus size={16} fill="rgb(230, 0, 18)" />
+            <h4 className="text-red">Games</h4>
+            <FaAngleDown size={18} fill="rgb(230, 0, 18)" />
           </button>
           <button className="dropdown">
-            <FaPlus size={18} />
-            <h4>Nintendo Switch</h4>
-            <FaAngleDown size={18} />
+            <FaPlus size={16} fill="rgb(230, 0, 18)" />
+            <h4 className="text-red">Nintendo Switch</h4>
+            <FaAngleDown size={18} fill="rgb(230, 0, 18)" />
           </button>
           <button className="dropdown">
-            <FaPlus size={18} />
-            <h4>News & Events</h4>
-            <FaAngleDown size={18} />
+            <FaPlus size={16} fill="rgb(230, 0, 18)" />
+            <h4 className="text-red">News & Events</h4>
+            <FaAngleDown size={18} fill="rgb(230, 0, 18)" />
           </button>
           <button className="dropdown">
-            <FaPlus size={18} />
-            <h4>Play Nintendo</h4>
-            <FaAngleDown size={18} />
+            <FaPlus size={16} fill="rgb(230, 0, 18)" />
+            <h4 className="text-red">Play Nintendo</h4>
+            <FaAngleDown size={18} fill="rgb(230, 0, 18)" />
           </button>
         </div>
       </div>
+      {dropdownOpen && (
+        <div className="nintendo-store">
+          <div className="nintendo-store-header">
+            <span className="store-title">
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="white-text font-bold"
+              >
+                My Nintendo Store
+              </a>
+              <button className="exit-btn" onClick={toggleDropdown}>x</button>
+            </span>
+            <span className="pattern"></span>
+          </div>
+          <div className="nintendo-store-menu">
+            <div>
+              <span className="flex gap-12">
+                <FaStar fill="rgb(230, 0, 18)" />
+                <h4>Games</h4>
+              </span>
+              <ul className="nintendo-list">
+                <li>Nintendo Switch games</li>
+                <li>New releases</li>
+                <li>Sales & deals</li>
+              </ul>
+            </div>
+            <div>
+              <span className="flex gap-12">
+                <FaStar fill="rgb(230, 0, 18)" />
+                <h4 className="">Hardware</h4>
+              </span>
+              <ul className="nintendo-list">
+                <li>Nintendo Switch systems</li>
+                <li>Joy-Con & controllers</li>
+                <li>Cases & more</li>
+                <li>amiibo</li>
+              </ul>
+            </div>
+            <div>
+              <span className="flex gap-12">
+                <FaStar fill="rgb(230, 0, 18)" />
+                <h4 className="">Merchandise</h4>
+              </span>
+              <ul className="nintendo-list">
+                <li>Apparel & accessories</li>
+                <li>Home & office</li>
+                <li>Plush</li>
+                <li>Toys</li>
+              </ul>
+            </div>
+            <div>
+              <span className="flex gap-12">
+                <FaStar fill="rgb(230, 0, 18)" />
+                <h4 className="">Store exclusives</h4>
+              </span>
+              <ul className="nintendo-list">
+                <li>Exclusives products</li>
+                <li>My Nintendo rewards</li>
+                <li>Nintendo Switch Online offers</li>
+              </ul>
+            </div>
+            <div>
+              <span className="flex gap-12">
+                <FaStar fill="rgb(230, 0, 18)" />
+                <h4 className="">Characters</h4>
+              </span>
+              <ul className="nintendo-list">
+                <li>Pikmin</li>
+                <li>Splatoon</li>
+                <li>Super Mario</li>
+                <li>The Legend of Zelda</li>
+              </ul>
+            </div>
+            <div>
+              <span className="flex gap-12">
+                <FaStar fill="rgb(230, 0, 18)" />
+                <h4 className="">Sales</h4>
+              </span>
+              <ul className="nintendo-list"></ul>
+            </div>
+          </div>
+          <button className="shop-all">Shop all</button>
+        </div>
+      )}
       <div className="flex-center banner-container">
         <div className="banner">
           <span className="shipping">
@@ -143,7 +237,13 @@ const DesktopNavBar = () => {
             </a>
           </span>
           <span className="earn-points">
-            <p>Earn <a href="#" className='points-link font-bold'>My Nintendo Points</a> on digital games</p>
+            <p>
+              Earn{" "}
+              <a href="#" className="points-link font-bold">
+                My Nintendo Points
+              </a>{" "}
+              on digital games
+            </p>
           </span>
         </div>
       </div>

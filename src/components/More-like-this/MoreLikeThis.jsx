@@ -1,29 +1,35 @@
 import React from "react";
 import "./MoreLikeThis.css";
 import Portia from "../../assets/img/portia.avif";
+import Controller from "../../assets/img/Controller-Hands.avif";
 
 const MoreLikeThis = () => {
   return (
     <section>
       <div>
         <div className="access-card">
-          <button className="online-btn">Online</button>
-          <h3>
-            Play online, access classic NES™ and Super NES™ games, and more with
-            a Nintendo Switch Online membership.
-          </h3>
-          <span className="flex">
-            <p>This game supports:</p>
-            <ul className="flex">
-              <li>
-                <a href="#">Online Play</a>
-              </li>
-              <li>
-                <a href="#">Save Data Cloud</a>
-              </li>
-            </ul>
-          </span>
-          <button className="learn-more-btn">Learn more</button>
+          <div className="access-details">
+            <button className="online-btn">Online</button>
+            <h3>
+              Play online, access classic NES™ and Super NES™ games, and more
+              with a Nintendo Switch Online membership.
+            </h3>
+            <span className="flex">
+              <p>This game supports:</p>
+              <ul className="flex">
+                <li>
+                  <a href="#">Online Play</a>
+                </li>
+                <li>
+                  <a href="#">Save Data Cloud</a>
+                </li>
+              </ul>
+            </span>
+            <button className="learn-more-btn">Learn more</button>
+          </div>
+          <div className="access-img">
+            <img src={Controller} alt="" />
+          </div>
         </div>
         <div>
           <h2>More like this</h2>

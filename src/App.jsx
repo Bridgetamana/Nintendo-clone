@@ -7,6 +7,7 @@ import ProductInfo from './components/Product-info/ProductInfo'
 import Product from './components/Product/Product';
 import DesktopNavBar from './components/Desktop-Navigation/DesktopNavBar';
 import TopDrawer from './components/Top-drawer/TopDrawer';
+import GameDescription from './components/Game-Description/GameDescription';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <DesktopNavBar />
       </div>
       <Product />
+      <GameDescription />
       <ProductInfo />
       <MoreLikeThis />
       <Footer />

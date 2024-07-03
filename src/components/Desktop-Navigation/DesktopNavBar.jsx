@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState} from "react";
 import "./DesktopNavBar.css";
 import Logo from "../../assets/img/nintendo-logo.jpeg";
 import Flag from "../../assets/img/united-states-flag.png";
@@ -20,7 +20,6 @@ const DesktopNavBar = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
-  const [scrollPosition, setScrollPosition] = useState(0);
 
   return (
     <nav>

@@ -1,102 +1,178 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./Product.css";
 import Stardew from "../../assets/img/stardew-valley.avif";
+import Stardew3 from "../../assets/img/stardew-valley3-desktop.avif";
+import Stardew4 from "../../assets/img/stardew-valley4-desktop.avif";
+import Stardew5 from "../../assets/img/stardew-valley5-desktop.avif";
+import Stardew6 from "../../assets/img/stardew-valley6-desktop.avif";
+import Stardew7 from "../../assets/img/stardew-valley7-desktop.avif";
+import Stardew8 from "../../assets/img/stardew-valley8-desktop.avif";
 import Certificate from "../../assets/img/esrb-certificate.png";
-import { MdChevronRight } from "react-icons/md";
+import GoldCoin from "../../assets/img/my-nintendo-gold-coin.avif";
+import { MdChevronRight, MdChevronLeft } from "react-icons/md";
+import { FaRegHeart } from "react-icons/fa";
+import { GoDownload } from "react-icons/go";
+const images = [
+  { src: Stardew, alt: "Stardew Valley 1" },
+  { src: Stardew, alt: "Stardew Valley 2" },
+  { src: Stardew3, alt: "Stardew Valley 3" },
+  { src: Stardew4, alt: "Stardew Valley 4" },
+  { src: Stardew5, alt: "Stardew Valley 5" },
+  { src: Stardew6, alt: "Stardew Valley 6" },
+  { src: Stardew7, alt: "Stardew Valley 7" },
+  { src: Stardew8, alt: "Stardew Valley 8" },
+];
 
-function Product() {
+const Product = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
+  // LOADING ANIMATION
+  const [isLoading, setLoading] = useState(true);
+
+   useEffect(() => {
+     const timer = setTimeout(() => {
+       setLoading(false);
+     }, 3000);
+
+     return () => clearTimeout(timer);
+   }, []);
+   
   return (
-    <section>
-      <div>
-        <div className="stardew-product-card">
-          <div className="breadcrumb">
-            <ul className="flex">
-              <li className="flex breadcrumb-list">
-                <a
-                  href="https://www.nintendo.com/us/store/"
-                  className="gray-text"
-                >
-                  Store
-                </a>
-                <MdChevronRight fill="#dadada" />
-              </li>
-              <li className="flex breadcrumb-list">
-                <a
-                  href="https://www.nintendo.com/us/store/games/"
-                  className="gray-text"
-                >
-                  Games
-                </a>
-                <MdChevronRight fill="#dadada" />
-              </li>
-              <li className="flex">
-                <a href="#" className="gray-text">
-                  Stardew Valley
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <div className="product-image">
-              <div className="stardew-img">
-                <img src={Stardew} alt="Stardew Valley" />
-              </div>
-              <div className="flex gap-12 image-slider">
-                <img src={Stardew} width={150} alt="Stardew Valley 1" />
-                <img src={Stardew} width={150} alt="Stardew Valley 2" />
-                <img src={Stardew} width={150} alt="Stardew Valley 3" />
-                <img src={Stardew} width={150} alt="Stardew Valley 4" />
-                <img src={Stardew} width={150} alt="Stardew Valley 5" />
-                <img src={Stardew} width={150} alt="Stardew Valley 6" />
-                <img src={Stardew} width={150} alt="Stardew Valley 7" />
-                <img src={Stardew} width={150} alt="Stardew Valley 8" />
-              </div>
-            </div>
-            <div className="flex rating">
-              <div className="rating-img">
-                <img src={Certificate} alt="" />
-              </div>
-              <div>
-                <p className="warning-text">
-                  Fantasy Violence, Use of Alcohol, Use of Tobacco, Simulated
-                  Gambling, Mild Language, Mild Blood
-                </p>
-                <p>Users Interact</p>
-              </div>
-            </div>
-          </div>
-          <div className="product-detail">
-            <span>
-              <div className="red-border"></div>
-              <p>Nintendo Switch</p>
-            </span>
+    <section className="section_1">
+      <div className="stardew-product-card">
+        <div className="breadcrumb">
+          <ul className="flex">
+            <li className="flex breadcrumb-list">
+              <a
+                href="https://www.nintendo.com/us/store/"
+                className="gray-text"
+              >
+                Store
+              </a>
+              <MdChevronRight fill="#dadada" size={20} />
+            </li>
+            <li className="flex breadcrumb-list">
+              <a
+                href="https://www.nintendo.com/us/store/games/"
+                className="gray-text"
+              >
+                Games
+              </a>
+              <MdChevronRight fill="#dadada" size={20} />
+            </li>
+            <li className="flex breadcrumb-list">
+              <a href="#" className="gray-text">
+                Stardew Valley
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div className="stardew-img flex">
+            <img
+              src={images[currentIndex].src}
+              width={150}
+              alt={images[currentIndex].alt}
+            />
             <div>
-              <h2>Stardew Valley</h2>
-              <div className="space-between">
-                <div className="product-detil-title"></div>
-                <button className="wishlist-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    width={24}
-                    viewBox="0 0 24 24"
-                    stroke="rgb(230, 0, 18)"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
-                    />
-                  </svg>
-                </button>
+              <MdChevronLeft
+                className="prev"
+                size={60}
+                onClick={prevSlide}
+                fill="white"
+              />
+              <MdChevronRight
+                className="next"
+                size={60}
+                onClick={nextSlide}
+                fill="white"
+              />
+            </div>
+          </div>
+          <div className="flex gap-12 image-slider">
+            {images.map((image, index) => (
+              <img
+                key={index}
+                src={image.src}
+                onClick={() => goToSlide(index)}
+                width={150}
+                alt={image.alt}
+                style={{
+                  borderBottom:
+                    currentIndex === index
+                      ? "6px solid rgb(230, 0, 18)"
+                      : "none",
+                  opacity: currentIndex === index ? "1" : "none",
+                }}
+              />
+            ))}
+          </div>{" "}
+          <div className="flex rating">
+            <div className="rating-img">
+              <img src={Certificate} alt="" />
+            </div>
+            <div>
+              <p className="warning-text">
+                Fantasy Violence, Use of Alcohol, Use of Tobacco, Simulated
+                Gambling, Mild Language, Mild Blood
+              </p>
+              <p>Users Interact</p>
+            </div>
+          </div>
+        </div>
+        <div className="product-detail">
+          <span>
+            <div className="red-border"></div>
+            <p>Nintendo Switch</p>
+          </span>
+          <div>
+            <h2>Stardew Valley</h2>
+            <div className="space-between">
+              {isLoading ? (
+                <div
+                  className={isLoading ? "product-detil-title" : "hidden"}
+                ></div>
+              ) : (
+                <h2 className="loaded-title">$14.99</h2>
+              )}
+              <button className="wishlist-button">
+                <FaRegHeart size={30} fill="rgb(230, 0, 18)" />{" "}
+              </button>
+            </div>
+            {isLoading ? (
+              <div
+                className={isLoading ? "product-detil-description" : "hidden"}
+              ></div>
+            ) : (
+              <div className="flex gap-12">
+                <div className="gold-point">
+                  <img src={GoldCoin} alt="" />
+                </div>
+                <p>
+                  Eligible for up to <b>75</b> Gold Points
+                </p>
               </div>
-              <div className="product-detil-description"></div>
+            )}
+            {isLoading ? (
               <button className="buy-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="rgb(225, 225, 225)"
                   width={24}
+                  className="buy-svg"
                 >
                   <path
                     fillRule="evenodd"
@@ -109,6 +185,7 @@ function Product() {
                   viewBox="0 0 24 24"
                   fill="rgb(225, 225, 225)"
                   width={24}
+                  className="buy-svg"
                 >
                   <path
                     fillRule="evenodd"
@@ -121,6 +198,7 @@ function Product() {
                   viewBox="0 0 24 24"
                   fill="rgb(225, 225, 225)"
                   width={24}
+                  className="buy-svg"
                 >
                   <path
                     fillRule="evenodd"
@@ -129,73 +207,16 @@ function Product() {
                   />
                 </svg>
               </button>
-              <p className="small-text">
-                This item will be sent to your system automatically after
-                purchase.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="game-description">
-          <div>
-            <div>
-              <h3>You&apos;re moving to the valley...</h3>
-              <br />
-              <span className="full-description">
-                <p>
-                  You’ve inherited your grandfather’s old farm plot in Stardew
-                  Valley. Armed with hand-me-down tools and a few coins, you set
-                  out to begin your new life. Can you learn to live off the land
-                  and turn these overgrown fields into a thriving home? It won’t
-                  be easy. Ever since Joja Corporation came to town, the old
-                  ways of life have all but disappeared. The community center,
-                  once the town’s most vibrant hub of activity, now lies in
-                  shambles. But the valley seems full of opportunity. With a
-                  little dedication, you might just be the one to restore
-                  Stardew Valley to greatness!
-                  <br />
-                  <br />
-                  Now with Multiplayer! Invite 1-3 players to join you in the
-                  valley! Players can work together to build a thriving farm,
-                  share resources, and build relationships with townspeople or
-                  each other. As more hands are better than one, players have
-                  the option to scale profit margin on produce sold for a more
-                  challenging experience.
-                </p>
-                <button className="readmore-btn">
-                  <a href="#" className="readmore-link">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="rgb(230, 0, 18)"
-                      width={24}
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <p>Read more</p>
-                  </a>
-                </button>
-                <p className="small-text">
-                  Software description provided by the publisher.
-                </p>
-              </span>
-              <button className="explore-btn">
-                <a
-                  href="http://www.stardewvalley.net/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Explore this game&apos;s official website
-                </a>
+            ) : (
+              <button className="flex gap-12 buy-btn">
+                <GoDownload fill="rgb(255, 255, 255)" size={30} />
+                Direct download
               </button>
-            </div>
-            <div className="stardew-image">
-              <img src={Stardew} alt="Stardew Valley" />
-            </div>
+            )}
+            <p className="small-text">
+              This item will be sent to your system automatically after
+              purchase.
+            </p>
           </div>
         </div>
       </div>

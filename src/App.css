@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Open-Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Raleway, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.4;
     color: rgb(72, 72, 72);
 }
@@ -15,16 +16,21 @@ img {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(72, 72, 72);
 }
 ol, ul {
     list-style: none;
 }
-section {
+.padding {
     padding: 2rem 1rem;
 }
-section > div {
+.max-width {
     max-width: 71.5rem;
+}
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 .gray-text {
     color: var(--gray-text);

@@ -1,9 +1,10 @@
 import React from 'react';
 import Stardew from "../../assets/img/stardew-valley.avif";
+import './GameDescription.css'
 
 const GameDescription = () => {
   return (
-    <section>
+    <section className='section_2'>
       <div className="game-description">
         <div>
           <div>

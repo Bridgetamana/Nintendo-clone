@@ -110,11 +110,11 @@ const Product = () => {
                 width={150}
                 alt={image.alt}
                 style={{
-                  borderBottom:
+                 borderBottom:
                     currentIndex === index
                       ? "6px solid rgb(230, 0, 18)"
-                      : "none",
-                  opacity: currentIndex === index ? "1" : "none",
+                      : "",
+                  opacity: currentIndex === index ? "1" : "0.8",
                 }}
               />
             ))}

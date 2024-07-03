@@ -5,6 +5,7 @@
   width: 100%;
   top: -100px;
   transition: top 150ms ease-in-out;
+  z-index: 100;
 }
 
 .top-drawer-wrapper.visible {

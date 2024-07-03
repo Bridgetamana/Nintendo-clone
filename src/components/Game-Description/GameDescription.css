@@ -1,0 +1,76 @@
+.section_2 {
+    margin-top: 4rem 0 0 2rem;
+}
+.game-description {
+  margin: 2rem 1rem 0 1rem;
+  max-width: 71.5rem;
+}
+.game-description > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: 1.75rem;
+}
+.full-description {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.full-description > p {
+  margin-bottom: 0.5rem;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+.readmore-btn {
+  padding: 0.5rem 0;
+  background-color: transparent;
+  border: none;
+}
+.readmore-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+}
+.readmore-link p {
+  color: rgb(230, 0, 18);
+}
+.explore-btn {
+  background-color: rgb(230, 0, 18);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.explore-btn a {
+  color: rgb(255, 255, 255);
+}
+.stardew-image > img {
+  border-radius: 0.5rem;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 768px) {
+    .game-description > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .game-description {
+  margin: 2.5rem auto;
+} 
+}
+
+@media (min-width: 1024px) {
+  .game-description {
+  margin: 4rem auto;
+  max-width: 90rem;
+} 
+}

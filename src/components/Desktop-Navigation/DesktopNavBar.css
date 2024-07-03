@@ -47,11 +47,16 @@ form {
     width: 24px;
     margin-right: 1rem;
 } */
+ .z-index {
+     position: relative;
+    z-index: 50;
+ }
 .header-dropdown {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 44px;
+    padding: 0.25rem 0;
+    background-color: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 .dropdown {
@@ -79,11 +84,30 @@ form {
 }
 
 
+.drawer {
+       position: absolute;
+    left: 0px;
+    width: 100%;
+    z-index: 50;
+}
+.overlay{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 200ms ease 0s;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+}
 .nintendo-store {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-bottom: 0.5rem;
+    background-color: #fff;
 }
 .nintendo-store-header {
     width: 100%;

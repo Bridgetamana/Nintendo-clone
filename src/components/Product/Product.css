@@ -61,22 +61,23 @@
 .image-slider img {
   flex-shrink: 0;
   margin: 0px 0.25rem;
-  width: calc(20% - 3.25rem);
+  width: calc(20% - 0.25rem);
   min-width: auto;
   border-radius: 0.75rem;
   aspect-ratio: 16/9;
   cursor: pointer;
   overflow: scroll;
+  transition: opacity 200ms ease-in-out 25ms;
+  transition: border 200ms ease-in-out;
 }
 
 .image-slider img {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .image-slider img:hover {
   opacity: 1;
   border-bottom: 6px solid rgb(230, 0, 18);
-  transition: border 200ms ease-in-out;
 }
 
 
@@ -210,62 +211,7 @@ svg:nth-child(3) {
   font-weight: 300;
   font-size: 0.625rem;
 }
-.game-description {
-  margin: 2rem 1rem 0 1rem;
-  max-width: 71.5rem;
-}
-.game-description > div {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: start;
-  gap: 1.75rem;
-}
-.full-description {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
-.full-description > p {
-  margin-bottom: 0.5rem;
-  -webkit-line-clamp: 10;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  display: -webkit-box;
-}
-.readmore-btn {
-  padding: 0.5rem 0;
-  background-color: transparent;
-  border: none;
-}
-.readmore-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-weight: 700;
-}
-.readmore-link p {
-  color: rgb(230, 0, 18);
-}
-.explore-btn {
-  background-color: rgb(230, 0, 18);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 1rem;
-  border: none;
-  padding: 1rem;
-  width: 100%;
-  border-radius: 0.5rem;
-}
-.explore-btn a {
-  color: rgb(255, 255, 255);
-}
-.stardew-image > img {
-  border-radius: 0.5rem;
-}
+
 
 /* Animation */
 @keyframes loading {
@@ -315,9 +261,7 @@ svg:nth-child(3) {
   .rating {
     display: flex;
   }
-  .game-description > div {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  
 }
 
 @media (min-width: 1024px) {

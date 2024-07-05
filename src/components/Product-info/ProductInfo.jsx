@@ -53,7 +53,7 @@ const ProductInfo = () => {
           <div className="product-info">
             <div className="product-data ">
               <FaCalendarAlt size={24} />
-              <div>
+              <div className="product-link-wrapper">
                 <h4>Release date</h4>
                 <div className="product-links">
                   <p>October 5, 2017</p>
@@ -62,7 +62,7 @@ const ProductInfo = () => {
             </div>
             <div className="product-data">
               <FaUsers size={24} />
-              <div>
+              <div className="product-link-wrapper">
                 <h4>No. of players</h4>
                 <div className="product-links">
                   <a href="#">Single System (1)</a>
@@ -73,7 +73,7 @@ const ProductInfo = () => {
             </div>
             <div className="product-data">
               <BsDpadFill size={24} />
-              <div>
+              <div className="product-link-wrapper">
                 <h4>Genre</h4>
                 <div className="product-links">
                   <a href="#">Role-divlaying</a>
@@ -83,7 +83,7 @@ const ProductInfo = () => {
             </div>
             <div className="product-data">
               <BsBuildingFill size={24} />
-              <div>
+              <div className="product-link-wrapper">
                 <h4>Publisher</h4>
                 <div className="product-links">
                   <a href="#">ConcernedApe</a>
@@ -92,36 +92,41 @@ const ProductInfo = () => {
             </div>
             <div className="product-data">
               <BsGearFill size={24} />
-              <div>
-              <h4>ESRB rating</h4>
-              <div className="product-links">
-                <a href="#">Everyone 10+</a>
-              </div>
-
+              <div className="product-link-wrapper">
+                <h4>ESRB rating</h4>
+                <div className="product-links">
+                  <a href="#">Everyone 10+</a>
+                </div>
               </div>
             </div>
             <div className="product-data">
               <IoIosPhoneLandscape size={24} />
-              <h4>Supported play modes</h4>
-              <div className="product-links">
-                <p>Tv mode, Tabletop mode, Handheld mode</p>
+              <div className="product-link-wrapper">
+                <h4>Supported play modes</h4>
+                <div className="product-links">
+                  <p>Tv mode, Tabletop mode, Handheld mode</p>
+                </div>
               </div>
             </div>
             <div className="product-data">
               <GrStorage size={24} />
-              <h4>Game file size</h4>
-              <div className="product-links">
-                <p>1.5 GB</p>
+              <div className="product-link-wrapper">
+                <h4>Game file size</h4>
+                <div className="product-links">
+                  <p>1.5 GB</p>
+                </div>
               </div>
             </div>
             <div className="product-data">
               <IoIosGlobe size={24} />
-              <h4>Supported languages</h4>
-              <div className="product-links">
-                <p>
-                  English, French, German, Italian,Japanese,Korean,Portuguese,
-                  Russian, Simplified Chunese, Spanish, divaditional Chinese
-                </p>
+              <div className="product-link-wrapper">
+                <h4>Supported languages</h4>
+                <div className="product-links">
+                  <p>
+                    English, French, German, Italian,Japanese,Korean,Portuguese,
+                    Russian, Simplified Chunese, Spanish, divaditional Chinese
+                  </p>
+                </div>
               </div>
             </div>
           </div>

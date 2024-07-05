@@ -47,7 +47,7 @@
   font-weight: 700;
   font-size: 1rem;
   border: none;
-  padding: 1rem;
+  padding: 0.65rem;
   width: 100%;
   border-radius: 0.5rem;
 }
@@ -60,11 +60,15 @@
 
 /* MEDIA QUERY */
 @media (min-width: 768px) {
+  .section_2 {
+    padding: 3rem 0 ;
+}
     .game-description > div {
     grid-template-columns: repeat(2, 1fr);
   }
   .game-description {
-  margin: 2.5rem auto;
+  margin: 9 auto;
+  width: 95%;
 } 
 }
 

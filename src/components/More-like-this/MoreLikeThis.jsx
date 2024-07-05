@@ -14,9 +14,9 @@ const MoreLikeThis = () => {
               Play online, access classic NES™ and Super NES™ games, and more
               with a Nintendo Switch Online membership.
             </h3>
-            <span className="flex">
+            <span>
               <p>This game supports:</p>
-              <ul className="flex">
+              <ul className="game-link">
                 <li>
                   <a href="#">Online Play</a>
                 </li>
@@ -33,7 +33,7 @@ const MoreLikeThis = () => {
         </div>
         <div>
           <h2>More like this</h2>
-          <div>
+          <div className="flex">
             <div className="more-game-card">
               <div className="more-game-img">
                 <img src={Portia} alt="" />

@@ -11,10 +11,9 @@ nav {
     gap: 14px;
 }
 .flag {
-    width: 20px;
+    width: 22px;
 }
 .flag img {
-    border: 1px solid white;
     border-radius: 0.25rem;
 }
 .nintendo-logo {

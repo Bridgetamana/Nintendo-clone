@@ -24,6 +24,7 @@ const images = [
 ];
 
 const Product = () => {
+  //Image slider
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -44,7 +45,7 @@ const Product = () => {
    useEffect(() => {
      const timer = setTimeout(() => {
        setLoading(false);
-     }, 3000);
+     }, 4000);
 
      return () => clearTimeout(timer);
    }, []);
@@ -101,7 +102,7 @@ const Product = () => {
               />
             </div>
           </div>
-          <div className="flex gap-12 image-slider">
+          <div className="flex image-slider">
             {images.map((image, index) => (
               <img
                 key={index}

@@ -27,12 +27,17 @@
   grid-column: 1;
 }
 .breadcrumb > ul {
-  gap: 6px;
+  gap: 4px;
 }
 .breadcrumb-list {
-  font-weight: 700;
+  font-weight: 600;
   margin-right: 4px;
+  font-size: 0.75rem;
+  color: rgb(114, 114, 114);
   gap: 0.5rem;
+}
+.breadcrumb-list:nth-child(3) {
+  font-weight: 700;
 }
 
 /* Product image */

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./MobileNavToolBar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaHeart, FaShoppingCart, FaSearch } from "react-icons/fa";
@@ -8,17 +8,35 @@ import { GoDownload } from "react-icons/go";
 
 
 const MobileNavToolBar = () => {
+
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 600) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="toolbar-container">
       <div className="toolbar">
-        <div className="download-toolbar">
+        <div className={`download-toolbar ${visible ? "visible" : ""}`}>
           <div>
             <span>
               <p>Digital</p>
               <h4>$14.99</h4>
             </span>
             <button className="flex gap-12 download-btn">
-              <GoDownload fill="rgb(255, 255, 255)" size={20}/>
+              <GoDownload fill="rgb(255, 255, 255)" size={20} />
               Direct download
             </button>
           </div>

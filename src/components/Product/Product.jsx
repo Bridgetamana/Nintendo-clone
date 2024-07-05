@@ -61,7 +61,7 @@ const Product = () => {
               >
                 Store
               </a>
-              <MdChevronRight fill="#dadada" size={20} />
+              <MdChevronRight fill="#dadada" size={22} />
             </li>
             <li className="flex breadcrumb-list">
               <a
@@ -70,7 +70,7 @@ const Product = () => {
               >
                 Games
               </a>
-              <MdChevronRight fill="#dadada" size={20} />
+              <MdChevronRight fill="#dadada" size={22} />
             </li>
             <li className="flex breadcrumb-list">
               <a href="#" className="gray-text">

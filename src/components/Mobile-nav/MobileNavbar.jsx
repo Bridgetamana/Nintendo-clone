@@ -12,7 +12,7 @@ const Navbar = () => {
             <img src={Logo} alt="Nintendo Logo" />
           </div>
           <div className="nav-link">
-            <a href="#" className="white-text">
+            <a href="#" className="white-text font-bold">
               My Nintendo Store
             </a>
             <div className="flag">
@@ -22,12 +22,18 @@ const Navbar = () => {
         </div>
         <div className="flex-center nav-banner">
           <span className="space-between">
-            {/* <p>Earn <a href="#" className='points-link font-bold'>My Nintendo Points</a> on digital games</p> */}
-            <b>Free shipping</b>
+            <p className="nav-banner-text">
+              Earn{" "}
+              <a href="#" className="points-link font-bold">
+                My Nintendo Points
+              </a>{" "}
+              on digital games
+            </p>
+            {/* <b>Free shipping</b>
             on orders $50 or more.
             <a href="#" target="blank" className="underline">
               Restrictions apply
-            </a>
+            </a> */}
           </span>
         </div>
       </div>

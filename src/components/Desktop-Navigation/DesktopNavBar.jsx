@@ -47,7 +47,7 @@ const DesktopNavBar = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={2}
                   stroke="currentColor"
-                  width={18}
+                  width={16}
                 >
                   <path
                     strokeLinecap="round"
@@ -72,14 +72,14 @@ const DesktopNavBar = () => {
             </form>
           </div>
         </div>
-        <div className="flex gap-16">
+        <div className="nav-quick-links">
           <a
             href="http://"
             target="_blank"
             rel="noopener noreferrer"
             className="quick-links"
           >
-            <RiQuestionnaireFill size={20} />
+            <RiQuestionnaireFill size={16} />
             <h4>Support</h4>
           </a>
           <a
@@ -88,7 +88,7 @@ const DesktopNavBar = () => {
             rel="noopener noreferrer"
             className="quick-links"
           >
-            <FaHeart size={18} />
+            <FaHeart size={14} />
             <h4>Wish List</h4>
           </a>
           <a
@@ -97,7 +97,7 @@ const DesktopNavBar = () => {
             rel="noopener noreferrer"
             className="quick-links"
           >
-            <FaShoppingCart size={20} />
+            <FaShoppingCart size={16} />
             <h4>Cart</h4>
           </a>
           <a
@@ -106,7 +106,7 @@ const DesktopNavBar = () => {
             rel="noopener noreferrer"
             className="quick-links"
           >
-            <FaUser size={18} />
+            <FaUser size={13} />
             <h4>Log in/ Sign up</h4>
           </a>
           <a
@@ -123,29 +123,29 @@ const DesktopNavBar = () => {
         <div className="header-dropdown">
           <div className="flex">
             <button className="dropdown" onClick={toggleDropdown}>
-              <FaPlus size={16} fill="rgb(230, 0, 18)" />
+              <FaPlus size={14} fill="rgb(230, 0, 18)" />
               <h4 className="text-red">My Nintendo Store</h4>
-              <FaAngleDown size={18} fill="rgb(230, 0, 18)" />
+              <FaAngleDown size={16} fill="rgb(230, 0, 18)" />
             </button>
             <button className="dropdown">
-              <FaPlus size={16} />
+              <FaPlus size={14} />
               <h4>Games</h4>
-              <FaAngleDown size={18} />
+              <FaAngleDown size={16} />
             </button>
             <button className="dropdown">
-              <FaPlus size={16} />
+              <FaPlus size={14} />
               <h4>Nintendo Switch</h4>
-              <FaAngleDown size={18} />
+              <FaAngleDown size={16} />
             </button>
             <button className="dropdown">
-              <FaPlus size={16} />
+              <FaPlus size={14} />
               <h4>News & Events</h4>
-              <FaAngleDown size={18} />
+              <FaAngleDown size={16} />
             </button>
             <button className="dropdown">
-              <FaPlus size={16} />
+              <FaPlus size={14} />
               <h4>Play Nintendo</h4>
-              <FaAngleDown size={18} />
+              <FaAngleDown size={16} />
             </button>
           </div>
         </div>

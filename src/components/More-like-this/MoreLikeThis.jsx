@@ -1,4 +1,3 @@
-import React from "react";
 import "./MoreLikeThis.css";
 import Portia from "../../assets/img/portia.avif";
 import Controller from "../../assets/img/Controller-Hands.avif";
@@ -10,12 +9,12 @@ const MoreLikeThis = () => {
         <div className="access-card">
           <div className="access-details">
             <button className="online-btn">Online</button>
-            <h3>
+            <h4>
               Play online, access classic NES™ and Super NES™ games, and more
               with a Nintendo Switch Online membership.
-            </h3>
-            <span>
-              <p>This game supports:</p>
+            </h4>
+            <span className="online-access-link">
+              <p className="game-text">This game supports:</p>
               <ul className="game-link">
                 <li>
                   <a href="#">Online Play</a>
@@ -31,7 +30,7 @@ const MoreLikeThis = () => {
             <img src={Controller} alt="" />
           </div>
         </div>
-        <div>
+        <div className="more-access-wrapper">
           <h2>More like this</h2>
           <div className="flex">
             <div className="more-game-card">
@@ -67,7 +66,7 @@ const MoreLikeThis = () => {
             </div>
           </div>
         </div>
-        <div className="warning">
+        <div className="warning small-text">
           <p>
             WARNING: If you have epilepsy or have had seizures or other unusual
             reactions to flashing lights or patterns, consult a doctor before
@@ -76,7 +75,7 @@ const MoreLikeThis = () => {
             software.
           </p>
           <br />
-          <p className="small-text">
+          <p className="">
             Nintendo Switch Online membership (sold separately) and Nintendo
             Account required for online play. Not available in all countries.
             Internet access required for online features. Terms apply.

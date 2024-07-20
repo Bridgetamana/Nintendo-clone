@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <div className="flex-center social-links-wrapper">
+        <div className=" social-links-wrapper">
           <div>
             <img src={Logo} alt="Nintendo Logo" />
           </div>

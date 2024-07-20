@@ -1,6 +1,5 @@
 .mobileNav {
-    padding: 0 1rem;
-    height: 46px;
+    padding: 0.5rem 1rem;
 }
 nav {
     font-size: 0.75rem;
@@ -8,13 +7,13 @@ nav {
 .nav-link {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 24px;
 }
 .flag {
     width: 22px;
 }
 .flag img {
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
 }
 .nintendo-logo {
     width: 90px;

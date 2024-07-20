@@ -60,9 +60,9 @@
 .image-slider img {
   flex-shrink: 0;
   margin: 0px 0.25rem;
-  width: calc(20% - 0.5rem);
+  width: calc(20% - 1rem);
   min-width: auto;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   aspect-ratio: 16/9;
   cursor: pointer;
   overflow: scroll;
@@ -251,14 +251,14 @@ svg:nth-child(3) {
     grid-column: span 2;
     padding: 0 0 0 1.25rem;
   }
-  .breadcrumb-list a {
-    font-size: 1.15rem;
-  }
   .product-image {
     margin-bottom: 0.5rem;
   }
   .rating {
     display: flex;
+  }
+  .goldpoint-text {
+    font-size: 0.75rem;
   }
   
 }

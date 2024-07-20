@@ -1,9 +1,8 @@
 .social-links-wrapper {
   background-color: rgb(230, 0, 18);
-  padding: 2.25rem 1rem;
-}
-footer {
-    
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
 }
 .social-links {
   margin-top: 1rem;
@@ -28,6 +27,10 @@ footer {
     border: none;
     font-weight: 700;
 }
+.links:hover {
+    border-bottom: 2px solid rgb(172, 0, 13);
+    color: rgb(172, 0, 13);
+}
 li:last-child {
     margin-left: 0;
 }
@@ -46,6 +49,10 @@ li:last-child {
 }
 .policy p {
     color: rgb(255, 255, 255);
+    font-size: 0.75rem;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
 }
 .policy-links {
     display: inline-flex;
@@ -53,6 +60,7 @@ li:last-child {
     gap: 1rem;
     margin-top: 2rem;
 }
+
 .policy-links li a {
     color: rgb(255, 255, 255);
     font-size: 0.65rem;
@@ -71,4 +79,16 @@ li:last-child {
 .language a {
     color: rgb(255, 255, 255);
     font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+.social-links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-links {
+  margin-top: 0;
+  gap: 3rem;
+}
 }

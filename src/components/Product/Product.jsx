@@ -161,7 +161,7 @@ const Product = () => {
                 <div className="gold-point">
                   <img src={GoldCoin} alt="" />
                 </div>
-                <p>
+                <p className="goldpoint-text">
                   Eligible for up to <b>75</b> Gold Points
                 </p>
               </div>

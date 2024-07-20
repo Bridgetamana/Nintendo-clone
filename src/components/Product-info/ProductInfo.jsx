@@ -1,14 +1,14 @@
-import React from "react";
 import "./ProductInfo.css";
 import { FaCalendarAlt, FaUsers } from "react-icons/fa";
 import { BsDpadFill, BsBuildingFill, BsGearFill } from "react-icons/bs";
 import { IoIosPhoneLandscape, IoIosGlobe } from "react-icons/io";
 import { GrStorage } from "react-icons/gr";
+import TV from "../../assets/img/Tv.png"
 
 const ProductInfo = () => {
   return (
     <section>
-      <div>
+      <div className="info-wrapper">
         <div className="rating-wrapper">
           <div className="rating-card">
             <h4 className="text-center">ESRB rating</h4>
@@ -30,19 +30,19 @@ const ProductInfo = () => {
             <div>
               <div className="devices">
                 <div className="devices-img">
-                  <img src="" alt="Tv" />
+                  <img src={TV} alt="Tv" />
                 </div>
                 <p>TV</p>
               </div>
               <div className="devices">
                 <div className="devices-img">
-                  <img src="" alt="Tabletop" />
+                  <img src={TV} alt="Tabletop" />
                 </div>
                 <p>Tabletop</p>
               </div>
               <div className="devices">
                 <div className="devices-img">
-                  <img src="" alt="Mobile phone" />
+                  <img src={TV} alt="Mobile phone" />
                 </div>
                 <p>Handheld</p>
               </div>
@@ -118,7 +118,7 @@ const ProductInfo = () => {
               </div>
             </div>
             <div className="product-data">
-              <IoIosGlobe size={24} />
+              <IoIosGlobe size={48} />
               <div className="product-link-wrapper">
                 <h4>Supported languages</h4>
                 <div className="product-links">

@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import { useState} from "react";
 import "./DesktopNavBar.css";
 import Logo from "../../assets/img/nintendo-logo.jpeg";
 import Flag from "../../assets/img/united-states-flag.png";
@@ -19,6 +19,11 @@ const DesktopNavBar = () => {
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
+  const[categorydropdownOpen, setCategoryDropdownOpen] = useState(false);
+  const toggleCategoryDropdown = () => {
+    setCategoryDropdownOpen(!categorydropdownOpen);
+    console.log('clicked')
+  };
 
 
   return (
@@ -29,12 +34,12 @@ const DesktopNavBar = () => {
             <img src={Logo} alt="Nintendo Logo" />
           </div>
           <div className="space-between">
-            <form>
+            <form className="search-bar-form">
               <div className="search-bar">
-                <FaSearch size={18} fill="rgb(114, 114, 114)" />
+                <FaSearch fill="rgb(114, 114, 114)" className="fasearch" />
                 <input type="search" name="search" id="" placeholder="Search" />
               </div>
-              <div className="flex gap-12">
+              <div className="flex gap-12 categories" onClick={toggleCategoryDropdown}>
                 <h4>All categories</h4>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -50,6 +55,8 @@ const DesktopNavBar = () => {
                     d="m19.5 8.25-7.5 7.5-7.5-7.5"
                   />
                 </svg>
+                {categorydropdownOpen && (
+
                 <div className="all-categories-menu">
                   <ul>
                     <li>All categories</li>
@@ -60,6 +67,7 @@ const DesktopNavBar = () => {
                     <li>Support</li>
                   </ul>
                 </div>
+                )}
               </div>
             </form>
           </div>

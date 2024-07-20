@@ -1,4 +1,3 @@
-import React from "react";
 import "./MobileNavbar.css";
 import Logo from "../../assets/img/nintendo-logo.jpeg";
 import Flag from "../../assets/img/united-states-flag.png";
@@ -21,7 +20,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex-center nav-banner">
-          <span className="space-between">
+          <span className="">
             <p className="nav-banner-text">
               Earn{" "}
               <a href="#" className="points-link font-bold">

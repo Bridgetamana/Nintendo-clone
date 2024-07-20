@@ -6,7 +6,7 @@
     background-color: rgb(255, 255, 255);
 }
 .nintendologo-desktop {
-    padding: 0.85rem;
+    padding: 1rem;
     background-color: rgb(230, 0, 18);
     display: flex;
     width: 100px;
@@ -14,23 +14,42 @@
     align-items: center;
     color: white;
 }
+.search-bar-form {
+    max-width: 28.125rem;
+    border-bottom: 1px solid rgb(72, 72, 72);
+    display: flex;
+    justify-content: space-between;
+}
+.search-bar-form:hover {
+    border-color: rgb(230, 0, 18);
+}
+.fasearch:hover {
+    fill: rgb(230, 0, 18);
+}
 .search-bar {
     display: flex;
-    gap: 0.5rem;
     align-items: center;
+    cursor: pointer;
     color: rgb(114, 114, 114);
+    gap: 10px;
+}
+.search-bar:hover {
+        color: rgb(230, 0, 18);
+}
+.categories {
+    cursor: pointer;
+}
+.categories h4 {
+    font-size: 0.875rem;
+}
+.categories h4:hover {
+    cursor: pointer;
+    color: rgb(230, 0, 18);
 }
 input {
     cursor: pointer;
     border: none;
     outline: none;
-}
-form {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(72, 72, 72);
-    padding-bottom: 0.25rem;
 }
 .all-categories-menu {
     display: none;

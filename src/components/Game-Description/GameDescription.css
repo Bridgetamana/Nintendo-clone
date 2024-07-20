@@ -70,6 +70,9 @@
   margin: 9 auto;
   width: 95%;
 } 
+.explore-btn {
+  padding: 0.75rem;
+}
 }
 
 @media (min-width: 1024px) {

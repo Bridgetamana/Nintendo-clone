@@ -1,5 +1,6 @@
 .toolbar-container {
     width: 100%;
+    max-width: 440px;
     height: calc(58px + 1rem);
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
     position: fixed;
@@ -90,17 +91,16 @@ display: flex;
 }
 @media (min-width: 768px) {
     .toolbar-container {
-        width: 60%;
         background: none;
     }
     .toolbar-nav-btn {
     padding: 1rem;
-}
-    
+}  
 }
 @media (min-width: 1024px) {
 .toolbar-container {
         display: none;
     }
+    
     
 }

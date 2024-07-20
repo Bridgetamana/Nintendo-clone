@@ -1,10 +1,12 @@
 import "./MoreLikeThis.css";
 import Portia from "../../assets/img/portia.avif";
+import Ooblets from "../../assets/img/ooblets.avif";
+import Portion from "../../assets/img/Portion-permit.avif";
 import Controller from "../../assets/img/Controller-Hands.avif";
 
 const MoreLikeThis = () => {
   return (
-    <section>
+    <section className="section_4">
       <div>
         <div className="access-card">
           <div className="access-details">
@@ -32,7 +34,100 @@ const MoreLikeThis = () => {
         </div>
         <div className="more-access-wrapper">
           <h2>More like this</h2>
-          <div className="flex">
+          <div className="flex game-card-slider">
+            <div className="more-game-card">
+              <div className="more-game-img">
+                <img src={Portia} alt="" />
+              </div>
+              <div className="more-game-text">
+                <span className="title">
+                  <h4>My Time at Portia</h4>
+                  <p>4/16/19</p>
+                </span>
+                <p className="price">$29.99</p>
+                <span className="wishlist-btn">
+                  <span className="flex">
+                    <div className="red-border"></div>
+                    <p>Nintendo Switch</p>
+                  </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    width={24}
+                    viewBox="0 0 24 24"
+                    stroke="rgb(230, 0, 18)"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div className="more-game-card">
+              <div className="more-game-img">
+                <img src={Portion} alt="" />
+              </div>
+              <div className="more-game-text">
+                <span className="title">
+                  <h4>Portion-permit</h4>
+                  <p>4/16/19</p>
+                </span>
+                <p className="price">$29.99</p>
+                <span className="wishlist-btn">
+                  <span className="flex">
+                    <div className="red-border"></div>
+                    <p>Nintendo Switch</p>
+                  </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    width={24}
+                    viewBox="0 0 24 24"
+                    stroke="rgb(230, 0, 18)"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div className="more-game-card">
+              <div className="more-game-img">
+                <img src={Ooblets} alt="" />
+              </div>
+              <div className="more-game-text">
+                <span className="title">
+                  <h4>Ooblets</h4>
+                  <p>2/1/22</p>
+                </span>
+                <p className="price">$29.99</p>
+                <span className="wishlist-btn">
+                  <span className="flex">
+                    <div className="red-border"></div>
+                    <p>Nintendo Switch</p>
+                  </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    width={24}
+                    viewBox="0 0 24 24"
+                    stroke="rgb(230, 0, 18)"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
             <div className="more-game-card">
               <div className="more-game-img">
                 <img src={Portia} alt="" />

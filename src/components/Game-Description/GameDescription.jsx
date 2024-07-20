@@ -1,4 +1,3 @@
-import React from 'react';
 import Stardew from "../../assets/img/stardew-valley.avif";
 import './GameDescription.css'
 

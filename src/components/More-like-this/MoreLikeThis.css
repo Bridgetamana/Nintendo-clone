@@ -1,3 +1,7 @@
+.section_4 {
+   max-width: 71.5rem;
+  margin: 0 auto;
+}
 .access-card {
   display: flex;
   background: rgb(248, 248, 248);
@@ -49,10 +53,8 @@ li a {
   color: rgb(255, 255, 255);
 }
 .more-game-card {
-  width: calc(66.6667% - 0.666667rem);
   margin: 1.5rem 1rem;
   flex-shrink: 0;
-  /* min-width: 208px; */
 max-width: 16.375rem;
 border: 1px solid rgb(218, 218, 218);
 border-radius: 0.5rem;
@@ -114,13 +116,16 @@ h4 {
   flex-wrap: wrap;
   gap: 12px;
 }
+.game-card-slider {
+  overflow-x: scroll;
+}
 .more-access-wrapper {
   position: relative;
     width: 100%;
     padding: 4rem 0 2rem 0;
     scroll-margin-top: 120px;
     max-width: 71.5rem;
-    margin: 0 1rem;
+    padding: 2rem 1rem;
 }
 .game-link li > a {
   color: rgb(230, 0, 18);

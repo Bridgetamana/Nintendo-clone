@@ -7,7 +7,7 @@ import TV from "../../assets/img/Tv.png"
 
 const ProductInfo = () => {
   return (
-    <section>
+    <section className="section_3">
       <div className="info-wrapper">
         <div className="rating-wrapper">
           <div className="rating-card">

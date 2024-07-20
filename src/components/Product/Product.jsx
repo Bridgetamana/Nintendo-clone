@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import {useState, useEffect} from "react";
 import "./Product.css";
 import Stardew from "../../assets/img/stardew-valley.avif";
 import Stardew3 from "../../assets/img/stardew-valley3-desktop.avif";

@@ -5,7 +5,7 @@
 .access-card {
   display: flex;
   background: rgb(248, 248, 248);
-  border-radius: 0.5rem;
+  border-radius: var(--borderRadiusSmall);
   padding: 2rem;
   align-items: center;
   font-weight: 700;
@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   padding: 0.25rem 1rem;
-  background-color: rgb(230, 0, 18);
+  background-color: var(--mainColor);
   border: none;
   margin-bottom: 1rem;
   width: 60%;
@@ -30,21 +30,12 @@ h4 {
   font-size: 0.75rem;
   font-weight: 400;
 }
-/* li {
-  margin: 0 0.5rem;
-}
-li a {
-  font-size: 0.875rem;
-  border-bottom: 2px solid rgb(230, 0, 18);
-  display: inline-block;
-  color: rgb(230, 0, 18);
-} */
 .learn-more-btn {
   display: flex;
   justify-content: center;
   padding: 1rem 1.5rem;
-  background-color: rgb(230, 0, 18);
-  border-radius: 0.5rem;
+  background-color: var(--mainColor);
+  border-radius: var(--borderRadiusSmall);
   border: none;
   margin-top: 1rem;
   width: 40%;
@@ -57,13 +48,13 @@ li a {
   flex-shrink: 0;
 max-width: 16.375rem;
 border: 1px solid rgb(218, 218, 218);
-border-radius: 0.5rem;
+border-radius: var(--borderRadiusSmall);
     overflow: hidden;
 
 }
 .more-game-img {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border-top-left-radius: var(--borderRadiusSmall);
+    border-top-right-radius: var(--borderRadiusSmall);
     overflow: hidden;
     flex-shrink: 0;
 }
@@ -85,11 +76,11 @@ border-radius: 0.5rem;
 .online-access-link {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: var(--borderRadiusSmall);
 }
 .price {
     margin-top: 2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--borderRadiusSmall);
     font-size: 1rem;
     font-weight: 700;
 }
@@ -102,7 +93,7 @@ border-radius: 0.5rem;
   display: block;
   width: 2px;
   height: 0.875rem;
-  background-color: rgb(230, 0, 18);
+  background-color: var(--mainColor);
   margin-right: 0.25rem;
 }
 .warning {
@@ -128,8 +119,8 @@ border-radius: 0.5rem;
     padding: 2rem 1rem;
 }
 .game-link li > a {
-  color: rgb(230, 0, 18);
-  border-bottom: 3px solid rgb(230, 0, 18);
+  color: var(--mainColor);
+  border-bottom: 3px solid var(--mainColor);
 }
 @media (min-width: 768px) {
   .access-img {

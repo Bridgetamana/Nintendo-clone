@@ -1,5 +1,5 @@
 .social-links-wrapper {
-  background-color: rgb(230, 0, 18);
+  background-color: var(--mainColor);
   padding: 2rem 1.25rem;
   display: flex;
   flex-direction: column;
@@ -25,13 +25,13 @@
 }
 .links {
   margin-bottom: 0.5rem;
-  color: rgb(230, 0, 18);
+  color: var(--mainColor);
   border: none;
   font-weight: 700;
 }
 .links:hover {
-  border-bottom: 2px solid rgb(172, 0, 13);
-  color: rgb(172, 0, 13);
+  border-bottom: 2px solid var(--hoverColor);
+  color: var(--hoverColor);
 }
 li:last-child {
   margin-left: 0;

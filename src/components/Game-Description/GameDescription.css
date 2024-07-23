@@ -19,14 +19,14 @@
   margin-bottom: 1rem;
 }
 .full-description > p {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--borderRadiusSmall);
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
   overflow: hidden;
   display: -webkit-box;
 }
 .readmore-btn {
-  padding: 0.5rem 0;
+  padding: var(--borderRadiusSmall) 0;
   background-color: transparent;
   border: none;
 }
@@ -37,10 +37,10 @@
   font-weight: 700;
 }
 .readmore-link p {
-  color: rgb(230, 0, 18);
+  color: var(--mainColor);
 }
 .explore-btn {
-  background-color: rgb(230, 0, 18);
+  background-color: var(--mainColor);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -50,13 +50,13 @@
   border: none;
   padding: 0.65rem;
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: var(--borderRadiusSmall);
 }
 .explore-btn a {
   color: rgb(255, 255, 255);
 }
 .stardew-image > img {
-  border-radius: 0.5rem;
+  border-radius: var(--borderRadiusSmall);
 }
 
 /* MEDIA QUERY */

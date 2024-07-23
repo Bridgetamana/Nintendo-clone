@@ -1,7 +1,7 @@
 .section_1 {
   background-color: rgb(214, 240, 250);
   position: relative;
-  z-index: 5;
+  z-index: 1;
 }
 .stardew-product-card {
   display: grid;

@@ -19,10 +19,10 @@ const DesktopNavBar = () => {
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
+
   const[categorydropdownOpen, setCategoryDropdownOpen] = useState(false);
   const toggleCategoryDropdown = () => {
     setCategoryDropdownOpen(!categorydropdownOpen);
-    console.log('clicked')
   };
 
 
@@ -39,8 +39,11 @@ const DesktopNavBar = () => {
                 <FaSearch fill="rgb(114, 114, 114)" className="fasearch" />
                 <input type="search" name="search" id="" placeholder="Search" />
               </div>
-              <div className="flex gap-12 categories" onClick={toggleCategoryDropdown}>
-                <h4>All categories</h4>
+              <div
+                className="flex gap-12 categories"
+                onClick={toggleCategoryDropdown}
+              >
+                <h4 onClick={toggleCategoryDropdown}>All categories</h4>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -55,19 +58,6 @@ const DesktopNavBar = () => {
                     d="m19.5 8.25-7.5 7.5-7.5-7.5"
                   />
                 </svg>
-                {categorydropdownOpen && (
-
-                <div className="all-categories-menu">
-                  <ul>
-                    <li>All categories</li>
-                    <li>Games</li>
-                    <li>Hardware</li>
-                    <li>Merchandise</li>
-                    <li>News & Events</li>
-                    <li>Support</li>
-                  </ul>
-                </div>
-                )}
               </div>
             </form>
           </div>
@@ -119,6 +109,18 @@ const DesktopNavBar = () => {
           </a>
         </div>
       </div>
+      {categorydropdownOpen && (
+        <div className="all-categories-menu">
+          <ul className="category-list">
+            <li>All categories</li>
+            <li>Games</li>
+            <li>Hardware</li>
+            <li>Merchandise</li>
+            <li>News & Events</li>
+            <li>Support</li>
+          </ul>
+        </div>
+      )}
       <div className="z-index">
         <div className="header-dropdown">
           <div className="flex">
@@ -174,8 +176,8 @@ const DesktopNavBar = () => {
               <div className="nintendo-store-menu">
                 <div>
                   <span className="flex gap-12">
-                    <FaStar fill="rgb(230, 0, 18)" />
-                    <h4>Games</h4>
+                    <FaStar fill="rgb(230, 0, 18)" size={20} />
+                    <h3>Games</h3>
                   </span>
                   <ul className="nintendo-list">
                     <li>Nintendo Switch games</li>
@@ -185,8 +187,8 @@ const DesktopNavBar = () => {
                 </div>
                 <div>
                   <span className="flex gap-12">
-                    <FaStar fill="rgb(230, 0, 18)" />
-                    <h4 className="">Hardware</h4>
+                    <FaStar fill="rgb(230, 0, 18)" size={20} />
+                    <h3>Hardware</h3>
                   </span>
                   <ul className="nintendo-list">
                     <li>Nintendo Switch systems</li>
@@ -197,8 +199,8 @@ const DesktopNavBar = () => {
                 </div>
                 <div>
                   <span className="flex gap-12">
-                    <FaStar fill="rgb(230, 0, 18)" />
-                    <h4 className="">Merchandise</h4>
+                    <FaStar fill="rgb(230, 0, 18)" size={20} />
+                    <h3 className="">Merchandise</h3>
                   </span>
                   <ul className="nintendo-list">
                     <li>Apparel & accessories</li>
@@ -209,8 +211,8 @@ const DesktopNavBar = () => {
                 </div>
                 <div>
                   <span className="flex gap-12">
-                    <FaStar fill="rgb(230, 0, 18)" />
-                    <h4 className="">Store exclusives</h4>
+                    <FaStar fill="rgb(230, 0, 18)" size={20} />
+                    <h3 className="">Store exclusives</h3>
                   </span>
                   <ul className="nintendo-list">
                     <li>Exclusives products</li>
@@ -220,8 +222,8 @@ const DesktopNavBar = () => {
                 </div>
                 <div>
                   <span className="flex gap-12">
-                    <FaStar fill="rgb(230, 0, 18)" />
-                    <h4 className="">Characters</h4>
+                    <FaStar fill="rgb(230, 0, 18)" size={20} />
+                    <h3 className="">Characters</h3>
                   </span>
                   <ul className="nintendo-list">
                     <li>Pikmin</li>
@@ -232,8 +234,8 @@ const DesktopNavBar = () => {
                 </div>
                 <div>
                   <span className="flex gap-12">
-                    <FaStar fill="rgb(230, 0, 18)" />
-                    <h4 className="">Sales</h4>
+                    <FaStar fill="rgb(230, 0, 18)" size={20} />
+                    <h3 className="">Sales $</h3>
                   </span>
                   <ul className="nintendo-list"></ul>
                 </div>
@@ -246,8 +248,7 @@ const DesktopNavBar = () => {
       <div className="flex-center banner-container">
         <div className="banner">
           <span className="shipping">
-            <b>Free shipping</b>
-            on orders $50 or more.
+            <b>Free shipping</b>&nbsp; on orders $50 or more.&nbsp;
             <a href="#" target="blank" className="underline">
               Restrictions apply
             </a>
